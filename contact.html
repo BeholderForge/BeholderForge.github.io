@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact Us - Beholder Forge Solutions</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="container header-container">
+      <div class="logo-title">
+        <img src="Original logo.png" alt="BeholderForge Logo" class="logo" />
+        <h1>Beholder Forge Solutions</h1>
+      </div>
+      <nav class="nav">
+        <a href="index.html" class="nav-link">Home</a>
+      <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="contact-main">
+    <section class="contact-section">
+      <h2>Contact Us</h2>
+      <form action="https://formspree.io/f/xdkdgwoj" method="POST" class="contact-form">
+        <label>
+          Name:
+          <input type="text" name="name" required />
+        </label>
+
+        <label>
+          Email:
+          <input type="email" name="email" required />
+        </label>
+
+        <label>
+          Message:
+          <textarea name="message" rows="6" required></textarea>
+        </label>
+
+        <button type="submit" class="btn-primary">Send Message</button>
+      </form>
+    </section>
+  </main>
+  <footer>
+    BeholderForge@gmail.com
+  </footer>
+</body>
+</html>
