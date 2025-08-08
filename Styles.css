@@ -168,23 +168,6 @@ footer {
   text-align: center;
 }
 
-@media (max-width: 640px) {
-  h1 {
-    font-size: 2.25rem;
-  }
-  .nav {
-    gap: 1rem;
-  }
-  .features {
-    grid-template-columns: 1fr;
-    padding: 1rem;
-  }
-  .feature {
-    width: 100%;
-    max-width: 100%;
-  }
-}
-
 .contact-main {
   margin-top: 100px;
   padding: 2rem;
@@ -302,6 +285,35 @@ footer a:visited {
 
 footer a:hover {
   color: #5b8b46;
+}
+
+@media (max-width: 840px) {
+  h1 {
+    font-size: 2.25rem;
+  }
+  .nav {
+    gap: 1rem;
+  }
+  .features {
+    grid-template-columns: 1fr;
+    padding: 1rem;
+  }
+  .feature {
+    width: 100%;
+    max-width: 100%;
+  }
+  .features {
+    grid-template-columns: 1fr;
+  }
+  footer {
+    font-size: 1.2rem; /* Increase as needed */
+    /* Optional: add padding for easier tapping on mobile */
+    padding: 8px 12px;
+    display: inline-block; /* Helps padding apply properly */
+  }
+  .nav {
+    font-size: 1.5rem;
+  }
 }
 
 
