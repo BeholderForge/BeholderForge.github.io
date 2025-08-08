@@ -65,6 +65,7 @@ body {
 /* Navigation */
 .nav {
   display: flex;
+  font-size: 1.2rem;
   gap: 1.5rem;
 }
 
@@ -272,6 +273,10 @@ footer {
 
 footer {
   color: #779B67;
+  font-size: 1.2rem; /* Increase as needed */
+  /* Optional: add padding for easier tapping on mobile */
+  padding: 8px 12px;
+  display: inline-block; /* Helps padding apply properly */
 }
 
 footer a {
@@ -287,7 +292,7 @@ footer a:hover {
   color: #5b8b46;
 }
 
-@media (max-width: 840px) {
+@media (max-width: 740px) {
   h1 {
     font-size: 2.25rem;
   }
@@ -305,20 +310,20 @@ footer a:hover {
   .features {
     grid-template-columns: 1fr;
   }
-  footer {
-    font-size: 1.2rem; /* Increase as needed */
-    /* Optional: add padding for easier tapping on mobile */
-    padding: 8px 12px;
-    display: inline-block; /* Helps padding apply properly */
-  }
   .nav {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
   }
-  .logo-title {
-    font-size: 1.5rem;
+  .logo-title h1 {
+    display: none;
   }
   .topPicture {
     max-height: 600px;
+  }
+  .logo-title {
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
